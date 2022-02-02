@@ -1,0 +1,337 @@
+/* CSS Reset  */
+*
+{
+ margin: 0;
+ padding: 0;
+}
+
+/* Navigation Bar  */
+#navbar img
+{
+    width: 90px;
+    padding: 0px;
+    border: 5px solid red;
+    border-radius: 50px;
+    margin: 5px 10px;
+    height: 90px;
+}
+
+#navbar ul
+{
+ display: flex;
+ list-style: none;
+ margin: 40px 23px;
+}
+
+.item
+{
+    padding: 2px;
+    margin-right: 43px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.item a
+{
+ text-decoration: none;
+ padding: 5px;
+ color: white;
+
+}
+
+.item a:hover, .item a:visited
+{
+ background-color: white;
+ color: black;
+ border-radius: 20px;
+}
+
+#navbar
+{
+ display: flex;
+ position: relative;
+}
+
+#navbar::before
+{
+ content: "";
+ background-color: black;
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ z-index: -1;
+ opacity: 0.4;
+}
+
+/*Designing Front Cover*/
+#home
+{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding: 200px;
+ position: relative;
+}
+
+#home::before
+{
+ content:"";
+ background: url(../images/bg.jpg) no-repeat center center/cover;
+ position: absolute;
+ height: 138%;
+ width: 100%;
+ z-index: -1;
+ opacity: 0.6;
+}
+
+.h_primary{
+color: white;
+text-align: center;
+font-size: 3.4rem; 
+font-family: 'Baloo Bhai 2', cursive;
+}
+
+.desc_text
+{
+ font-family: 'Baloo Bhai 2', cursive;
+}
+
+/*Designing Front Cover : Designing order now button*/
+.btn
+{
+ margin-top: 20px;
+ background-color: rgb(209, 25, 25);
+ color: white;
+ font-family: 'Baloo Bhai 2', cursive;
+ cursor: pointer;
+ padding: 10px;
+ border-radius: 20px;
+ width: 100px;
+ height: 50px;
+  /*transition: <transition-property> || <transition-duration> || <transition-timing-function> || <transition-delay> */
+ transition: width 0.5s ease-in-out;                           
+ /* transition: height 2s ease-in; */
+}
+
+.btn:hover
+{
+ width: 120px;
+ 
+}
+
+.h_secondary
+{
+ font-family: 'Baloo Bhai 2', cursive;
+ font-size: 2.8rem;
+ text-align: center;
+ margin-top: 166px;
+}
+
+
+
+.description
+{
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 10px;
+    margin-right: 5px; 
+    text-align: center;
+    color:rgb(196, 37, 16)
+}
+
+
+
+
+
+/*Designing food ordering column*/
+
+#Food-Ordering::before
+{
+ content:"";
+ background: url(../images/Food\ Delivery.jpg) center center/cover;
+ position: absolute;
+ height: 109%;
+ width: 100%;
+ z-index: -1;
+ opacity: 0.6;
+}
+
+#Food-Ordering
+{
+ position: relative;
+}
+
+/*Designing bulk ordering column*/
+
+#Bulk-Ordering::before
+{
+ content:"";
+ background: url(../images/Bulk\ Ordering.jpg) center center/cover;
+ position: absolute;
+ height: 109%;
+ width: 100%;
+ z-index: -1;
+ opacity: 0.6;
+}
+
+#Bulk-Ordering
+{
+ position: relative;
+}
+
+/*Designing fast delivery column*/
+
+#Fast-Delivery::before
+{
+ content:"";
+ background: url(../images/Fast\ Delivery.jpg) center center/cover;
+ position: absolute;
+ height: 109%;
+ width: 100%;
+ z-index: -1;
+ opacity: 0.6;
+}
+
+ #Fast-Delivery
+{
+ position: relative;
+}
+
+.services 
+{
+ margin:30px;
+
+}
+
+#Food-Ordering
+{
+ grid-area: 'foodord';
+}
+
+#Bulk-Ordering
+{
+ grid-area: 'bulkord';
+}
+
+#Fast-Delivery
+{
+ grid-area: 'fastdel';
+}
+
+#ourservices_subsection
+{
+  padding: 5px;
+  display: grid;
+  grid-template-areas: 'foodord bulkord fastdel';
+} 
+
+
+
+
+ /*Designing clients section*/
+ #clientsection::before
+ {
+  content: "";
+  background: url(../images/Our\ clients.jpg) center center/cover; 
+  position: absolute;
+  height: 109%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+ }
+
+ #clientsection
+ {
+  position: relative;
+ }
+
+ .client_images
+ {
+    width: 107px;
+    height: 110px;
+    margin-right: 70px;
+ }
+
+ #clients
+ {
+  display: flex;
+  justify-content: center;
+ }
+
+ /*Designing Contact Us Section*/
+ #contact::before
+ {
+  content: "";
+  background: url(../images/contact-us-bg.jpg) center center/cover; 
+  position: absolute;
+  height: 109%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+ }
+
+ #contact
+ {
+  position: relative;
+ }
+
+ #contact-form 
+ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ #contact-form div
+ {
+  padding: 10px;
+  font-size: 1.3 rem;
+  font-family: 'Baloo Bhai 2', cursive;
+  
+ }
+
+ #contact-form label
+ {
+  margin-right: 10px;
+ }
+ #contact-form input, #contact-form textarea
+ {
+  padding: 5px;
+ }
+ footer
+ {
+  background-color: rgb(51, 6, 6);
+  color: white;
+  font-family: 'Baloo Bhai 2', cursive;
+  text-align: center;
+ }
+
+ 
+
+ body
+ {
+  background-color: rgb(187, 162, 108);
+ }
+
+ /*CSS for Responsive Design*/
+ @media(min-width: 992px) and (max-width: 1199px)
+ {
+     #ourservices_subsection
+     {
+       padding: 5px;
+       display: grid;
+       grid-template-areas: 'foodord bulkord'
+       'fastdel fastdel';
+     }   
+ }
+ 
+ @media(min-width: 0px) and (max-width: 991px)
+ {
+     #ourservices_subsection
+     {
+       padding: 5px;
+       display: grid;
+       grid-template-areas: 'foodord'
+       'bulkord'
+       'fastdel';
+     }   
+ }
